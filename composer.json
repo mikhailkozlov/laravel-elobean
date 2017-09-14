@@ -1,7 +1,8 @@
 {
-    "name": "mikhailkozlov/laravel-elobean",
+    "name": "mikhailkozlov/elobean",
     "description": "SugarCRM v10 API wrapper for eloquent interactions. Edit",
     "type": ["api-wrapper", "laravel", "sugarcrm", "bean", "eloquent"],
+    "type": "project",
     "require": {
         "php": ">=5.4.0",
         "laravel/database": "^5.2",
@@ -17,5 +18,10 @@
             "email": "code@315design.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "MikhailKozlov\\Elobean\\": "src/"
+        }
+    },
     "minimum-stability": "dev"
 }
