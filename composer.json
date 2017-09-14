@@ -1,5 +1,5 @@
 {
-    "name": "mikhailkozlov/elobean",
+    "name": "mikhailkozlov/laravel-elobean",
     "description": "SugarCRM v10 API wrapper for eloquent interactions. Edit",
     "type": ["api-wrapper", "laravel", "sugarcrm", "bean", "eloquent"],
     "type": "project",
