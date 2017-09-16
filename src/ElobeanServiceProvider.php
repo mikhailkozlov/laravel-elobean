@@ -13,6 +13,7 @@ class ElobeanServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
     }
 
     /**
@@ -22,5 +23,13 @@ class ElobeanServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        // Add a sugarcrm extension to the original database manager
+        $this->app['db']->extend('sugarcrm', function ($config) {
+
+            $api = new v10($config, $config['options']);
+
+            return new Connection($api);
+        });
+
     }
 }
